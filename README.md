@@ -15,10 +15,9 @@ npm run dev
 
 Already set up and deployed at:
 
-**https://debritbhattacharyya-cmd.github.io/pius-lab**
+**https://uts-pius-lab.github.io/Website/**
 
-Repo: https://github.com/debritbhattacharyya-cmd/pius-lab
-
+Repo: [https://uts-pius-lab.github.io/Website/]
 Every push to `main` re-runs `.github/workflows/deploy.yml`, which builds the site and redeploys automatically — no manual steps needed for content updates.
 
 > **Note:** the repo must stay **public** for Pages to work. GitHub's free plan only publishes Pages sites from public repos — a private repo needs GitHub Pro (or Team/Enterprise) to deploy.
