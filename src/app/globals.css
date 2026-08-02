@@ -285,6 +285,25 @@ body {
   100% { transform: rotate(var(--angle)) translate(28px) scale(0); opacity: 0; }
 }
 
+/* ══════════════════════════════════════════════════════════════
+   AWARDS TIMELINE
+   Nodes start hidden/scaled-down and pop up + fade in once they
+   scroll into the sticky viewport.
+   ══════════════════════════════════════════════════════════════ */
+.timeline-node-inner {
+  opacity: 0;
+  /* translateX(-50%) re-centers the node horizontally — it must stay in
+     this same transform value, since this rule overrides (not composes
+     with) the -translate-x-1/2 utility class also on this element. */
+  transform: translateX(-50%) scale(0.7) translateY(12px);
+  transition: opacity .6s ease, transform .6s cubic-bezier(.16, .84, .44, 1);
+}
+
+.timeline-node-inner.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) scale(1) translateY(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .circuit-text .ct-reveal { transition: none; clip-path: inset(0 0 0 0); }
   .circuit-text .ct-spark { display: none; }
@@ -294,4 +313,5 @@ body {
   .plasma-btn { transition: none; }
   .plasma-btn:hover { transform: none; }
   .plasma-particle, .plasma-shockwave::before { animation: none; display: none; }
+  .timeline-node-inner { transition: none; opacity: 1; transform: none; }
 }

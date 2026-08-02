@@ -12,6 +12,7 @@ const navItems = [
   { label: "Team",     href: "/team" },
   { label: "Advisory", href: "/advisory" },
   { label: "News",     href: "/news" },
+  { label: "Awards",   href: "/awards" },
   { label: "Contact",  href: "/contact" },
 ];
 
@@ -34,7 +35,7 @@ export default function Nav() {
         <div className="flex justify-between items-center h-20">
 
           {/* LOGO */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group md:mr-8 lg:mr-16 xl:mr-24">
             <div className="bg-[#0B1220] text-electric-cyan border border-electric-cyan/30 rounded-lg px-3 py-1.5 text-sm font-bold tracking-wide shadow-glow group-hover:border-electric-cyan/60 transition-colors">
               PIUS
             </div>

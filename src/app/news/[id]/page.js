@@ -28,8 +28,8 @@ export default function NewsDetail({ params }) {
     <>
       <section className="bg-white/[0.02] border-b border-white/10 py-16">
         <div className="max-w-3xl mx-auto px-6">
-          <PlasmaButton href="/news" variant="ghost" className="mb-6">
-            ← Back to News
+          <PlasmaButton href={item.badge === "award" ? "/awards" : "/news"} variant="ghost" className="mb-6">
+            {item.badge === "award" ? "← Back to Awards" : "← Back to News"}
           </PlasmaButton>
           <div className="flex items-center gap-3 mb-4">
             <span className={"text-xs font-semibold px-2.5 py-1 rounded-full capitalize " + (BADGE[item.badge] || BADGE.launch)}>
