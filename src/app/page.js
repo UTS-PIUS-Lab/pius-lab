@@ -43,7 +43,7 @@ export default function Home() {
                 paddingBottom: '0.1em'
               }}
             >
-              Intelligent
+              Physical Intelligence
             </span>
 
             <CircuitText as="span" text="Uncrewed Systems" className="block font-bold text-white" />

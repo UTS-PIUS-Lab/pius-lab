@@ -13,19 +13,31 @@ npm run dev
 
 ## Deploy to GitHub Pages
 
-1. Create a GitHub repo named `pius-lab`
-2. In `next.config.js` confirm `basePath: '/pius-lab'` matches your repo name
+Already set up and deployed at:
+
+**https://debritbhattacharyya-cmd.github.io/pius-lab**
+
+Repo: https://github.com/debritbhattacharyya-cmd/pius-lab
+
+Every push to `main` re-runs `.github/workflows/deploy.yml`, which builds the site and redeploys automatically — no manual steps needed for content updates.
+
+> **Note:** the repo must stay **public** for Pages to work. GitHub's free plan only publishes Pages sites from public repos — a private repo needs GitHub Pro (or Team/Enterprise) to deploy.
+
+### Setting this up from scratch (e.g. forking to a new repo)
+
+1. Create a GitHub repo (any name)
+2. In `next.config.js` set `basePath` to match your repo name
 3. Push:
 ```bash
 git init && git add .
 git commit -m "Initial PIUS Lab website"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/pius-lab.git
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
 git push -u origin main
 ```
 4. Repo Settings → Pages → Source: **GitHub Actions**
 
-Live at: `https://YOUR-USERNAME.github.io/pius-lab`
+Live at: `https://YOUR-USERNAME.github.io/YOUR-REPO`
 
 ## Updating Content — just edit src/data/ files
 
