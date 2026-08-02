@@ -3,8 +3,6 @@
 // Add new items to the TOP of this array
 export const news = [
  // ── Awards ──
-  { id:'award-uts-staff-2024',      date:'2024', badge:'award', title:'UTS Faculty Staff Recognition Award 2024',                    summary:'Recognised in the category of Outstanding Contributions to External Partnerships and Engineering & IT Impact, UTS Faculty of Engineering and IT.' },
-  { id:'award-student-exp-2024',    date:'2024', badge:'award', title:'Student Experience Award — UTS Tech Festival',                summary:'Awarded by the Deputy Vice Chancellor, Teaching & Learning, for transforming student experience and purpose through the UTS Tech Festival.' },
   { id:'award-anzsta-2024',         date:'2024', badge:'award', title:'ANZ Sports Technology Award — Winner, Esports & Gaming',      summary:'Won the Esports & Gaming category at the ANZ Sports Technology Awards (ANZSTA) for the Sixth-I Anti-Cheat and Checkmate Live platform.' },
   { id:'award-iawards-asars-gov-2024', date:'2024', badge:'award', title:'NSW iAwards — Winner, Government & Public Sector',         summary:'Won the Government & Public Sector category at the NSW state iAwards for the Aerial Search and Rescue System (ASARS).' },
   { id:'award-iawards-asars-nfp-2024', date:'2024', badge:'award', title:'NSW iAwards — Merit, Not-For-Profit & Community',          summary:'Received a Merit award in the Not-For-Profit & Community category at the NSW state iAwards for the Aerial Search and Rescue System (ASARS).' },
