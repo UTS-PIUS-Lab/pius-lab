@@ -1,10 +1,10 @@
 // ── TEAM ────────────────────────────────────────
 // category: 'Lab Director' | 'Postdoc' | 'Research Associate' | 'PhD Student' | 'Masters Student'
 export const currentTeam = [
-  { initials:'NS', name:'Prof. Nabin Sharma',  role:'Lab Director & Associate Professor', category:'Lab Director',       bio:'Leads PIUS Lab with expertise in computer vision, AI, and autonomous drone systems. Co-Founder of UTS Intelligent Drone Lab with 19+ years experience.', email:'nabin.sharma@uts.edu.au', scholar:'https://scholar.google.com/citations?user=qBY-a8gAAAAJ' },
-  { initials:'TR', name:'Dr. Tirthankar Raychaudhuri', role:'Industry Fellow',             category:'Industry Fellow',            bio:'Multi-UAV coordination and distributed control algorithms for swarm robotics in GPS-denied environments.', email:'Tirthankar.Raychaudhuri@uts.edu.au' },
-  { initials:'GS', name:'Ms Geetha Sundarajan',         role:'PhD Candidate',                      category:'PhD Student',        bio:'30+ Year in Industry, currently a PhD Candidate at UTS, working on TBT', email:'alex.johnson@student.uts.edu.au' },
-  { initials:'AA', name:'Abdulrahaman Alharabi',          role:'PhD Completed',                      category:'PhD Student',        bio:'Sentiment Analysis ffrom Arabic Social Media text', email:'priya.kumar@student.uts.edu.au' },
+  { initials:'NS', name:'A/Prof. Nabin Sharma',  role:'Lab Director & Associate Professor', category:'Lab Director',       bio:'Leads PIUS Lab with expertise in Computer Vision, AI, and autonomous drone systems. Co-Founder of UTS Intelligent Drone Lab with 19+ years experience.', email:'nabin.sharma@uts.edu.au', scholar:'https://scholar.google.com/citations?user=qBY-a8gAAAAJ' },
+  { initials:'TR', name:'Dr. Tirthankar Raychaudhuri', role:'Industry Fellow',             category:'Industry Fellow',            bio:'Achiving Human like intelligence using the thousand brain theory.', email:'Tirthankar.Raychaudhuri@uts.edu.au' },
+  { initials:'GS', name:'Ms Geetha Sundarajan',         role:'PhD Candidate',                      category:'PhD Student',        bio:'30+ Year in Industry, currently a PhD Candidate at UTS, working on TBT', email:'geetha.sundarrajan@student.uts.edu.au' },
+  { initials:'AA', name:'Abdulrahaman Alharabi',          role:'PhD Completed',                      category:'PhD Student',        bio:'Sentiment Analysis ffrom Arabic Social Media text', email:'' },
   ];
 
 export const alumni = [
