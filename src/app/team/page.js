@@ -25,8 +25,8 @@ export default function Team() {
               <button key={c} onClick={() => setCat(c)}
                 className={`uppercase text-xs tracking-widest font-semibold px-4 py-2 rounded-full border transition-colors ${
                   cat === c
-                    ? "bg-electric-cyan text-[#030712] border-electric-cyan shadow-glow"
-                    : "border-white/10 text-slate-400 hover:border-electric-cyan/40 hover:text-electric-cyan"
+                    ? "bg-electric-cyan text-ink border-electric-cyan shadow-glow"
+                    : "border-tint/10 text-muted hover:border-electric-cyan/40 hover:text-electric-cyan"
                 }`}>
                 {c}
               </button>
@@ -38,10 +38,10 @@ export default function Team() {
         </div>
       </section>
 
-      <hr className="border-white/5" />
+      <hr className="border-tint/5" />
 
       {/* LAB ALUMNI — collapsible */}
-      <section className="py-12 bg-white/[0.02]">
+      <section className="py-12 bg-tint/[0.02]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <button onClick={() => setAlumniOpen(o => !o)}
             className="w-full flex items-center justify-between glass rounded-xl px-6 py-5 hover:border-electric-cyan/30 transition-colors group">
@@ -49,14 +49,14 @@ export default function Team() {
               <span className="uppercase text-xs tracking-widest font-semibold text-electric-cyan">
                 Lab Alumni
               </span>
-              <span className="text-sm text-slate-500 font-medium">{alumni.length} members</span>
+              <span className="text-sm text-faint font-medium">{alumni.length} members</span>
             </div>
-            <ChevronDown size={18} className={`text-slate-500 transition-transform duration-300 ${alumniOpen ? "rotate-180" : ""}`} />
+            <ChevronDown size={18} className={`text-faint transition-transform duration-300 ${alumniOpen ? "rotate-180" : ""}`} />
           </button>
 
           {alumniOpen && (
             <div className="mt-6">
-              <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-xl">
+              <p className="text-muted text-sm leading-relaxed mb-6 max-w-xl">
                 PIUS Lab graduates who have gone on to careers in academia, industry, and government.
               </p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -67,21 +67,21 @@ export default function Team() {
                       {a.initials}
                     </div>
                     <div className="min-w-0">
-                      <div className="font-semibold text-white text-sm">{a.name}</div>
+                      <div className="font-semibold text-fg text-sm">{a.name}</div>
                       <div className="flex items-center gap-2 mt-1 mb-2 flex-wrap">
-                        <span className="text-xs font-semibold uppercase tracking-wide bg-white/5 text-slate-300 px-2 py-0.5 rounded">
+                        <span className="text-xs font-semibold uppercase tracking-wide bg-tint/5 text-soft px-2 py-0.5 rounded">
                           {a.degree}
                         </span>
-                        <span className="text-xs text-slate-500">{a.year}</span>
+                        <span className="text-xs text-faint">{a.year}</span>
                       </div>
                       {a.thesis && (
-                        <p className="text-xs text-slate-500 italic mb-1.5 truncate">"{a.thesis}"</p>
+                        <p className="text-xs text-faint italic mb-1.5 truncate">"{a.thesis}"</p>
                       )}
                       {a.nowAt && (
-                        <p className="text-xs text-slate-400">
-                          <span className="text-slate-500 uppercase tracking-wide text-xs">Now at </span>
+                        <p className="text-xs text-muted">
+                          <span className="text-faint uppercase tracking-wide text-xs">Now at </span>
                           <span className="text-electric-cyan font-medium">{a.nowAt}</span>
-                          {a.nowRole && <span className="text-slate-500"> · {a.nowRole}</span>}
+                          {a.nowRole && <span className="text-faint"> · {a.nowRole}</span>}
                         </p>
                       )}
                     </div>

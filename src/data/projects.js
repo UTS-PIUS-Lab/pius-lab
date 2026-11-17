@@ -5,7 +5,7 @@ export const projects = [
   {
     id: 'sharkspotter',
     tag: 'AI for Public Safety',
-    tagColor: 'bg-blue-500/15 text-blue-300 border border-blue-400/20',
+    tagColor: 'bg-blue-500/15 text-blue-700 dark:text-blue-300 border border-blue-400/20',
     barColor: 'bg-electric-blue',
     title: 'SharkSpotter',
     subtitle: 'AI-Powered Drone Shark Detection',
@@ -16,7 +16,7 @@ export const projects = [
   {
     id: 'search-rescue',
     tag: 'Emergency Response',
-    tagColor: 'bg-green-500/15 text-green-300 border border-green-400/20',
+    tagColor: 'bg-green-500/15 text-green-700 dark:text-green-300 border border-green-400/20',
     barColor: 'bg-green-500',
     title: 'Aerial Search & Rescue',
     subtitle: 'AI Drone Search & Rescue System',
@@ -27,7 +27,7 @@ export const projects = [
   {
     id: 'droneoptid',
     tag: 'Defence & Security',
-    tagColor: 'bg-purple-500/15 text-purple-300 border border-purple-400/20',
+    tagColor: 'bg-purple-500/15 text-purple-700 dark:text-purple-300 border border-purple-400/20',
     barColor: 'bg-purple-500',
     title: 'DroneOptID',
     subtitle: 'Drone Detection & Identification',

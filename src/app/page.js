@@ -27,7 +27,7 @@ export default function Home() {
               lineHeight: 1.15,
               letterSpacing: '-0.02em',
               marginBottom: '1.5rem',
-              color: '#fff'
+              color: 'rgb(var(--fg))'
             }}
           >
             <span
@@ -36,7 +36,7 @@ export default function Home() {
                 fontStyle: 'italic',
                 fontWeight: 700,
                 fontFamily: '"Times New Roman", Times, serif',
-                background: 'linear-gradient(135deg,#00F0FF,#00A3FF,#3B82F6)',
+                background: 'linear-gradient(135deg, rgb(var(--electric-cyan)), rgb(var(--electric-blue)), rgb(var(--electric-deep)))',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -46,14 +46,14 @@ export default function Home() {
               Physical Intelligence &
             </span>
 
-            <CircuitText as="span" text="Uncrewed Systems" className="block font-bold text-white" />
+            <CircuitText as="span" text="Uncrewed Systems" className="block font-bold text-fg" />
 
-            <span style={{display:'block',fontStyle:'bold',color:'#7d8aa3',fontSize:'50%',fontWeight:600}}>
+            <span style={{display:'block',fontStyle:'bold',color:'rgb(var(--hero-sub))',fontSize:'50%',fontWeight:600}}>
               PIUS Lab
             </span>
           </h1>
 
-          <p className="text-xl text-slate-400 max-w-xl leading-relaxed mb-10">
+          <p className="text-xl text-muted max-w-xl leading-relaxed mb-10">
             Advancing autonomous drones, swarm intelligence, and AI-driven robotics
             at UTS — from award-winning research to real-world deployments.
           </p>
@@ -74,14 +74,14 @@ export default function Home() {
               <div key={s.label}
                 className="glass rounded-3xl p-6 hover:-translate-y-1 hover:border-electric-cyan/30 hover:shadow-glow transition-all duration-300">
                 <CircuitText as="div" text={s.value} className="block text-3xl font-bold mb-1" />
-                <div className="text-xs text-slate-500 font-medium uppercase tracking-wide">{s.label}</div>
+                <div className="text-xs text-faint font-medium uppercase tracking-wide">{s.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <hr className="border-white/5" />
+      <hr className="border-tint/5" />
 
       {/* ── RESEARCH — Next.js grid style ── */}
       <section className="py-20 bg-transparent">
@@ -95,20 +95,20 @@ export default function Home() {
             {researchAreas.map((r, i) => (
               <div
                 key={i}
-                className="bg-white/[0.02] rounded-xl border border-white/10 hover:border-electric-cyan/40 hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+                className="bg-tint/[0.02] rounded-xl border border-tint/10 hover:border-electric-cyan/40 hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden"
               >
                 <img
                   src={r.gif.src}
                   alt={r.title}
-                  className="w-full h-48 object-cover bg-[#0B1220]"
+                  className="w-full h-48 object-cover bg-ink-card"
                 />
 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-3">
+                  <h3 className="text-xl font-bold text-fg mb-3">
                     {r.title}
                   </h3>
 
-                  <p className="text-[#E0E6ED] text-sm leading-relaxed">
+                  <p className="text-body text-sm leading-relaxed">
                     {r.summary}
                   </p>
                 </div>
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
       </section>
 
-      <hr className="border-white/5" />
+      <hr className="border-tint/5" />
 
       {/* ── PROJECTS ── */}
       <section className="py-20 bg-transparent">
@@ -144,7 +144,7 @@ export default function Home() {
         </div>
       </section>
 
-      <hr className="border-white/5" />
+      <hr className="border-tint/5" />
 
       {/* ── NEWS ── */}
       <section className="py-20 bg-transparent">

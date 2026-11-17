@@ -9,14 +9,14 @@ const BG = {
 const TEXT = {
   'Lab Director':       'text-electric-cyan',
   'Industry Fellow':    'text-electric-blue',
-  'Postdoc':            'text-blue-300',
-  'PhD Student':        'text-purple-300',
-  'Masters Student':    'text-green-300',
-  'Research Associate': 'text-slate-300',
+  'Postdoc':            'text-blue-700 dark:text-blue-300',
+  'PhD Student':        'text-purple-700 dark:text-purple-300',
+  'Masters Student':    'text-green-700 dark:text-green-300',
+  'Research Associate': 'text-soft',
 };
 const INITIALS_BG = {
-  'Lab Director':       'bg-electric-cyan text-[#030712]',
-  'Industry Fellow':    'bg-electric-blue text-[#030712]',
+  'Lab Director':       'bg-electric-cyan text-ink',
+  'Industry Fellow':    'bg-electric-blue text-ink',
   'Postdoc':            'bg-blue-500 text-white',
   'PhD Student':        'bg-purple-500 text-white',
   'Masters Student':    'bg-green-500 text-white',
@@ -38,13 +38,13 @@ export default function TeamCard({ member }) {
       </div>
       {/* INFO */}
       <div className="p-5">
-        <h3 className="font-bold text-white text-base mb-0.5">{member.name}</h3>
+        <h3 className="font-bold text-fg text-base mb-0.5">{member.name}</h3>
         <p className={`text-xs font-semibold uppercase tracking-wide mb-3 ${txt}`}>{member.role}</p>
-        <p className="text-sm text-[#E0E6ED] leading-relaxed mb-4">{member.bio}</p>
+        <p className="text-sm text-body leading-relaxed mb-4">{member.bio}</p>
         <div className="flex flex-wrap gap-2">
-          {member.email    && <a href={`mailto:${member.email}`}       className="text-xs px-3 py-1 rounded-full border border-white/10 text-slate-400 hover:border-electric-cyan/40 hover:text-electric-cyan transition-colors">Email</a>}
-          {member.scholar  && <a href={member.scholar}  target="_blank" rel="noopener" className="text-xs px-3 py-1 rounded-full border border-white/10 text-slate-400 hover:border-electric-cyan/40 hover:text-electric-cyan transition-colors">Scholar</a>}
-          {member.linkedin && <a href={member.linkedin} target="_blank" rel="noopener" className="text-xs px-3 py-1 rounded-full border border-white/10 text-slate-400 hover:border-electric-cyan/40 hover:text-electric-cyan transition-colors">LinkedIn</a>}
+          {member.email    && <a href={`mailto:${member.email}`}       className="text-xs px-3 py-1 rounded-full border border-tint/10 text-muted hover:border-electric-cyan/40 hover:text-electric-cyan transition-colors">Email</a>}
+          {member.scholar  && <a href={member.scholar}  target="_blank" rel="noopener" className="text-xs px-3 py-1 rounded-full border border-tint/10 text-muted hover:border-electric-cyan/40 hover:text-electric-cyan transition-colors">Scholar</a>}
+          {member.linkedin && <a href={member.linkedin} target="_blank" rel="noopener" className="text-xs px-3 py-1 rounded-full border border-tint/10 text-muted hover:border-electric-cyan/40 hover:text-electric-cyan transition-colors">LinkedIn</a>}
         </div>
       </div>
     </div>

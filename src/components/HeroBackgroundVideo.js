@@ -26,6 +26,7 @@ export default function HeroBackgroundVideo() {
   if (!heroVideoSrc) return null;
 
   return (
+    <>
     <video
       ref={ref}
       autoPlay
@@ -47,5 +48,12 @@ export default function HeroBackgroundVideo() {
     >
       <source src={heroVideoSrc} type="video/mp4" />
     </video>
+    {/* Light theme only: a pale wash over the video so dark text stays readable. */}
+    <div
+      aria-hidden="true"
+      className="bg-ink/55 dark:hidden"
+      style={{ position: "fixed", inset: 0, zIndex: -1, pointerEvents: "none" }}
+    />
+    </>
   );
 }

@@ -9,9 +9,9 @@ export default function SectionHeader({ tag, title, lead }) {
       <CircuitText
         as="h2"
         text={title}
-        className="block text-4xl md:text-6xl font-black tracking-tight text-white mb-6"
+        className="block text-4xl md:text-6xl font-black tracking-tight text-fg mb-6"
       />
-      <p className="max-w-3xl text-lg text-[#E0E6ED] leading-relaxed">
+      <p className="max-w-3xl text-lg text-body leading-relaxed">
         {lead}
       </p>
     </div>

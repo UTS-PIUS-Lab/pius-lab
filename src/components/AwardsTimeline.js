@@ -47,10 +47,10 @@ function TimelineNode({ item, index, viewportRef }) {
         } ${visible ? "is-visible" : ""}`}
         style={above ? { bottom: `calc(50% + ${AXIS_GAP}px)` } : { top: `calc(50% + ${AXIS_GAP}px)` }}
       >
-        <p className="w-[220px] text-center text-xs text-slate-300 leading-snug group-hover:text-electric-cyan transition-colors">
+        <p className="w-[220px] text-center text-xs text-soft leading-snug group-hover:text-electric-cyan transition-colors">
           {item.title}
         </p>
-        <div className="w-20 h-20 rounded-full border-2 border-dashed border-electric-cyan/50 bg-ink-card/70 backdrop-blur flex items-center justify-center text-white font-bold text-sm group-hover:border-electric-cyan group-hover:shadow-glow transition-all">
+        <div className="w-20 h-20 rounded-full border-2 border-dashed border-electric-cyan/50 bg-ink-card/70 backdrop-blur flex items-center justify-center text-fg font-bold text-sm group-hover:border-electric-cyan group-hover:shadow-glow transition-all">
           {item.date}
         </div>
       </Link>

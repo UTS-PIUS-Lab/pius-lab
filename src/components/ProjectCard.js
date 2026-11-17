@@ -8,15 +8,15 @@ export default function ProjectCard({ project }) {
             {project.tag}
           </span>
           {project.highlight && (
-            <span className="text-xs text-slate-500 font-medium">{project.highlight}</span>
+            <span className="text-xs text-faint font-medium">{project.highlight}</span>
           )}
         </div>
-        <h3 className="text-lg font-bold text-white mb-1">{project.title}</h3>
+        <h3 className="text-lg font-bold text-fg mb-1">{project.title}</h3>
         <p className="text-sm text-electric-cyan font-medium mb-3">{project.subtitle}</p>
-        <p className="text-sm text-[#E0E6ED] leading-relaxed mb-4">{project.description}</p>
+        <p className="text-sm text-body leading-relaxed mb-4">{project.description}</p>
         <div className="flex flex-wrap gap-2">
           {project.awards.map(a => (
-            <span key={a} className="text-xs px-2.5 py-1 bg-amber-400/10 text-amber-300 border border-amber-400/20 rounded-full font-medium">
+            <span key={a} className="text-xs px-2.5 py-1 bg-amber-400/10 text-amber-700 dark:text-amber-300 border border-amber-400/20 rounded-full font-medium">
               {a}
             </span>
           ))}

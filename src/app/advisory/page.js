@@ -16,12 +16,12 @@ export default function Advisory() {
                     {a.initials}
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-base">{a.name}</h3>
+                    <h3 className="font-bold text-fg text-base">{a.name}</h3>
                     <p className="text-xs font-semibold uppercase tracking-wide text-electric-cyan mt-0.5">{a.title}</p>
-                    <p className="text-xs text-slate-400 mt-0.5">{a.org}</p>
+                    <p className="text-xs text-muted mt-0.5">{a.org}</p>
                   </div>
                 </div>
-                <p className="text-sm text-slate-400 leading-relaxed border-t border-white/5 pt-4">{a.bio}</p>
+                <p className="text-sm text-muted leading-relaxed border-t border-tint/5 pt-4">{a.bio}</p>
               </div>
             ))}
           </div>

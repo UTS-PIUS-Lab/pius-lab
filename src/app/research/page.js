@@ -14,13 +14,13 @@ export default function Research() {
       />
       <section className="py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid md:grid-cols-3 border border-white/10 rounded-xl overflow-hidden divide-y md:divide-y-0 md:divide-x divide-white/10">
+          <div className="grid md:grid-cols-3 border border-tint/10 rounded-xl overflow-hidden divide-y md:divide-y-0 md:divide-x divide-tint/10">
             {researchAreas.map(r => <ResearchCard key={r.title} item={r} />)}
           </div>
         </div>
       </section>
-      <hr className="border-white/5" />
-      <section className="py-20 bg-white/[0.02]">
+      <hr className="border-tint/5" />
+      <section className="py-20 bg-tint/[0.02]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <SectionHeader tag="Collaborate" title="Work with us"
             lead="We welcome collaborators from industry, government, and academia. If you have a challenge involving autonomous or uncrewed systems, reach out." />
