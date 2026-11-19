@@ -35,7 +35,7 @@ export default function Footer() {
         <div>
           <h3 className="text-base font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-1.5">
-            {[["About","/about"],["Research","/research"],["Projects","/projects"],["Team","/team"],["Advisory","/advisory"],["News","/news"],["Awards","/awards"],["Contact","/contact"]].map(([label,href]) => (
+            {[["About","/about"],["Research","/research"],["Research Projects","/projects"],["Student Projects","/projects/students"],["Team","/team"],["Advisory","/advisory"],["News","/news"],["Awards","/awards"],["Contact","/contact"]].map(([label,href]) => (
               <li key={label}>
                 <Link href={href} className="text-muted text-sm hover:text-electric-cyan transition-colors">
                   {label}

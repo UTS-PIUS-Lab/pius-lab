@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <>
       <PageHero
-        eyebrow="Major Projects"
+        eyebrow="Research Projects"
         title="Award-winning research"
         subtitle="Real-world impact across public safety, defence, emergency response, and sport — translating research into deployable systems."
       />
