@@ -79,9 +79,7 @@ export default function StudentProjectCard({ project }) {
           <p className="text-xs uppercase tracking-widest font-semibold text-electric-cyan mb-2">{event}</p>
         )}
         <h3 className="text-lg font-bold text-fg mb-1 group-hover:text-electric-cyan transition-colors">{title}</h3>
-        {description && <p className="text-sm text-body leading-relaxed mb-2">{description}</p>}
-        <span className="text-sm text-electric-cyan font-medium group-hover:underline">Watch on YouTube →</span>
-      </div>
+        {description && <p className="text-sm text-body leading-relaxed mb-2">{description}</p>}      </div>
     </a>
   );
 }
