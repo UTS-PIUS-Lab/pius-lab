@@ -7,7 +7,7 @@ const PREVIEW_SECONDS = 5;
 // Shows the YouTube thumbnail; while hovered (or keyboard-focused) it plays a
 // muted 5-second preview on loop. Clicking opens the full video on YouTube.
 export default function StudentProjectCard({ project }) {
-  const { title, youtubeId, previewStart = 0, event, description } = project;
+  const { title, youtubeId, previewStart = 0, event, description, noPreview } = project;
   const [previewing, setPreviewing] = useState(false);
   const [loop, setLoop] = useState(0); // bumping this remounts the iframe → restarts the clip
   const timer = useRef(null);
@@ -19,7 +19,8 @@ export default function StudentProjectCard({ project }) {
     return () => clearInterval(timer.current);
   }, [previewing]);
 
-  const start = () => setPreviewing(true);
+  // noPreview: the video's owner has disabled embedding, so only the thumbnail shows
+  const start = () => { if (!noPreview) setPreviewing(true); };
   const stop = () => {
     setPreviewing(false);
     setLoop(0);
