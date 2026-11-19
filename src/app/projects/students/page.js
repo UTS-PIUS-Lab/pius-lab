@@ -8,7 +8,7 @@ export default function StudentProjects() {
       <PageHero
         eyebrow="Student Projects"
         title="Student projects"
-        subtitle="Work by PhD, Masters, and Honours students at PIUS Lab."
+        subtitle="Worked by Masters and Honours students at PIUS Lab."
       />
       <section className="py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
