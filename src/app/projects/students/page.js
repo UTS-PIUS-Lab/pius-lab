@@ -1,7 +1,7 @@
 import PageHero from "../../../components/PageHero";
-import PlasmaButton from "../../../components/PlasmaButton";
+import StudentProjectCard from "../../../components/StudentProjectCard";
+import { studentProjects } from "../../../data/studentProjects";
 
-// Student Projects: placeholder until the content is decided.
 export default function StudentProjects() {
   return (
     <>
@@ -12,11 +12,10 @@ export default function StudentProjects() {
       />
       <section className="py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="glass rounded-3xl p-10 text-center">
-            <p className="text-lg text-body mb-6">Student projects are coming soon.</p>
-            <PlasmaButton href="/projects" variant="ghost">
-              View research projects →
-            </PlasmaButton>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {studentProjects.map((p) => (
+              <StudentProjectCard key={p.id} project={p} />
+            ))}
           </div>
         </div>
       </section>
